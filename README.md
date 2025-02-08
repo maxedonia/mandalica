@@ -1,32 +1,72 @@
 # mandalica
-This p5.js script creates an ever-evolving, audio-reactive mandala that transforms in real time based on your microphone input and MIDI controls. The script processes audio with FFT to extract volume and frequency data, which in turn modulate a cyclic drawing path. This path is then symmetrically replicated and mirrored to produce a mesmerizing mandala effect.
+## **Audio-Reactive Mandala Visualizer**
+This repository contains a p5.js script that generates an ever-evolving, audio-reactive mandala. The script leverages microphone input, FFT analysis, and MIDI integration to create a mesmerizing visual experience where every detail can be dynamically controlled.
 
-**Key Features:**
+## **Features**
+### **Dynamic Audio-Reactive Visuals**
+Uses microphone input and FFT analysis to generate a cyclic drawing path that changes in real time based on audio data. Audio parameters modulate stroke thickness, brightness, and deviation from a base circular path to create intricate patterns.
 
-**Dynamic Audio-Reactive Visuals:**
-Uses microphone input and FFT analysis to modulate stroke thickness, brightness, and the deviation of a cyclic path—resulting in an ever-changing mandala pattern.
+### **Symmetry & Mirroring**
+The cyclic path is replicated and mirrored around the canvas center with adjustable symmetry, resulting in kaleidoscopic visuals.
 
-**Symmetry & Mirroring:**
-The cyclic path is replicated around the canvas center, with adjustable symmetry that creates intricate, kaleidoscopic visuals.
+### **Customizable Parameters**
+Six on-screen sliders allow you to adjust:
 
-**Customizable Parameters:**
-Six UI sliders let you fine-tune the look and behavior of the mandala:
-
-**Fade:** Controls the fading overlay. (Inverted behavior: sliding left gives no fade—clear instantly, while sliding right yields full sustain.)
-**Color Sweep:** Adjusts a cyclic offset to modulate the RGB output.
-**Draw Speed:** Alters how fast the cyclic path is drawn.
-**Base Radius:** Sets the radius of the base circle.
+**Fade:** Controls the fade overlay. (Inverted behavior: sliding left clears the canvas instantly, while sliding right provides full sustain.)
+**Color Sweep:** Adjusts a cyclic color offset that modulates the RGB values.
+**Draw Speed:** Alters the speed at which the cyclic path is drawn.
+**Base Radius:** Sets the size of the base circle.
 **Deviation:** Determines how much the audio input modulates the path’s radius.
 **Symmetry:** Changes the number of symmetric copies drawn.
 
-**MIDI Integration:**
-Fully MIDI-enabled for live performance:
+### **MIDI Integration**
+Fully MIDI-enabled for live performance and control:
 
-**Parameter Mapping:** 
-Each slider is assigned to a MIDI CC (Fade: CC1, Color Sweep: CC2, Draw Speed: CC3, Base Radius: CC4, Impact: CC5, Symmetry: CC6).
-**Toggle Triggers:** 
-Additional MIDI triggers (and keyboard shortcuts) let you toggle the fade effect, reset the mandala, or randomize all slider values on the fly.
-**Interactive UI & Keyboard Shortcuts:**
-In addition to MIDI control, the script provides an on-screen UI with toggle checkboxes and supports keyboard shortcuts (e.g., F for fade toggle, R/Z for reset/randomize) for seamless interaction.
+### **Parameter Mapping:**
+**Fade:** CC1
 
-_Perfect for live visual performances, interactive installations, or exploring creative audio-visual art, this mandala visualizer is a versatile tool for experimentation and artistic expression._
+**Color Sweep:** CC2
+
+**Draw Speed:** CC3
+
+**Base Radius:** CC4
+
+**Impact:** CC5
+
+**Symmetry:** CC6
+
+*Additional MIDI triggers (and corresponding keyboard shortcuts) allow for:*
+
+**Toggle Fade:** (via **F** or MIDI **CC value < 124**)
+
+**Reset Mandala:** (via **R** or MIDI **CC7** trigger)
+
+**Randomize Sliders:** (via** Z** or MIDI **CC8** trigger)
+
+
+### **Additional Keyboard Shortcuts**
+S: Toggle slider visibility.
+
+## **Installation**
+Clone the repository:
+
+    git clone https://github.com/maxedonia/mandalica.git
+    cd your-repo-name
+
+Open the index.html file in your browser.
+**(Ensure your browser supports the Web Audio API and, for full functionality, the Web MIDI API.)**
+
+## **Usage**
+### **Activate the Microphone:**
+Click anywhere on the canvas to start the microphone input.
+
+### **Adjust the Visuals:**
+Use the on-screen sliders to modify parameters such as fade, color sweep, draw speed, base radius, impact, and symmetry.
+
+### **Control via MIDI:**
+Connect your MIDI controller to use the mapped controls for both the sliders and toggle functions.
+
+*This patch was originally mapped for functionality with the Teenage Engineering OP-XY, but is simple enough to employ on a wide variety of MIDI controllers.*
+
+License
+This project is open source and available under the MIT License.
