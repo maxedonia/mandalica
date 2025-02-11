@@ -58,13 +58,52 @@ S: Toggle slider visibility.
 
 ## **Installation**
 Clone the repository:
+   
+        git clone https://github.com/maxedonia/mandalica.git
+        cd your-repo-name
 
-    git clone https://github.com/maxedonia/mandalica.git
-    cd your-repo-name
+**Running the Mandalica Patch Locally:**
 
-Open the index.html file in your browser.
+This project needs to be served over HTTP rather than just opening the HTML file directly in your browser. Below are two methods to serve your project using Git Bash (or any terminal).
+
+### Option 1: Using Node.js and `http-server`
+
+1. **Install Node.js:**  
+   If you haven’t already, install Node.js from [nodejs.org](https://nodejs.org/).
+
+2. **Install `http-server` Globally:**  
+   Open Git Bash and run:
+  
+        npm install -g http-server
+
+3. Open the index.html file in your browser in your open port address
+
+        https://127.0.0.1:8000 or similar
+
 **(Ensure your browser supports the Web Audio API and, for full functionality, the Web MIDI API.)**
 
+### Option 2: Using Python's Built-In HTTP Server
+If you have Python installed, you can serve your project as follows:
+
+**For Python 3**:
+Navigate to Your Project Directory:
+     
+        cd /path/to/your/project
+        
+Start the Server in Python 3:
+
+        python -m http.server 8000
+
+Start the Server in Python 2:
+
+        python -m SimpleHTTPServer 8000
+        
+**Access Port:**
+Open your web browser and go to:
+
+        http://127.0.0.1:8000
+
+        
 ## **Usage**
 ### **Activate the Microphone:**
 Click anywhere on the canvas to start the microphone input.
@@ -76,9 +115,10 @@ Use the on-screen sliders to modify parameters such as fade, color sweep, draw s
 Connect your MIDI controller to use the mapped controls for both the sliders and toggle functions.
 ![mandala_git_gif3](https://github.com/user-attachments/assets/ee781161-89c0-448b-a912-5ff4960b50cc)
 
+You can find a full video demonstration [here](https://youtu.be/O_Std7CS_SE?si=Wob5zYrDjDJRSgMG)
+
 ![vid demo image](https://github.com/user-attachments/assets/93c7c1fa-a30f-44ef-a3b6-24087248d96e)
 
-You can find a full video demonstration [here](https://youtu.be/O_Std7CS_SE?si=Wob5zYrDjDJRSgMG)
 
 **Note:** *_This patch was originally mapped for functionality with the Teenage Engineering OP-XY, but remains simple enough to employ on a wide variety of MIDI controllers._*
 
