@@ -64,7 +64,7 @@ Clone the repository:
 
 **Running the Mandalica Patch Locally:**
 
-This project needs to be served over HTTP rather than just opening the HTML file directly in your browser. Below are two methods to serve your project using Git Bash (or any terminal).
+**This project needs to be served over HTTP rather than just opening the HTML file directly in your browser. Below are two methods to serve your project using Git Bash, python or similar terminal.**
 
 ### Option 1: Using Node.js and `http-server`
 
@@ -109,7 +109,8 @@ Open your web browser and go to:
 
       http://127.0.0.1:8000
 
-        
+**(Ensure your browser supports the Web Audio API and, for full functionality, the Web MIDI API.)**
+       
 ## **Usage**
 ### **Activate the Microphone:**
 Click anywhere on the canvas to start the microphone input.
