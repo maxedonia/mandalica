@@ -11,7 +11,8 @@ Uses microphone input and FFT analysis to generate a cyclic drawing path that ch
 The cyclic path is replicated and mirrored around the canvas center with adjustable symmetry, resulting in kaleidoscopic visuals.
 
 ### **Customizable Parameters**
-Six on-screen sliders allow you to adjust:
+
+Six on-screen sliders allow you to adjust patch output.
 
 **Fade:** Controls the fade overlay.
 
@@ -45,11 +46,11 @@ Fully MIDI-enabled for live performance and control:
 
 *Additional MIDI triggers (and corresponding keyboard shortcuts) allow for:*
 
-**Toggle Fade:** (via **F** or MIDI **CC value < 124**)
+**Toggle Fade:** (via **F** or MIDI **CC1** value < 3)
 
-**Reset Mandala:** (via **R** or MIDI **CC7** trigger)
+**Reset Mandala:** (via **R** or MIDI **CC7** value > 64)
 
-**Randomize Sliders:** (via** Z** or MIDI **CC8** trigger)
+**Randomize Sliders:** (via **Z** or MIDI **CC8** value > 64)
 
 
 ### **Additional Keyboard Shortcuts**
@@ -79,7 +80,7 @@ Connect your MIDI controller to use the mapped controls for both the sliders and
 
 You can find a full video demonstration [here](https://youtu.be/O_Std7CS_SE?si=Wob5zYrDjDJRSgMG)
 
-**Note:** *_This patch was originally mapped for functionality with the Teenage Engineering OP-XY, but is simple enough to employ on a wide variety of MIDI controllers._*
+**Note:** *_This patch was originally mapped for functionality with the Teenage Engineering OP-XY, but remains simple enough to employ on a wide variety of MIDI controllers._*
 
 **License**
 
