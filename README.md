@@ -74,17 +74,17 @@ This project needs to be served over HTTP rather than just opening the HTML file
 2. **Install `http-server` Globally:**  
    Open Git Bash and run:
   
-        npm install -g http-server
+         npm install -g http-server
    
 **Start the Server**:
 
 Run the following command to start a web server on port 8000:
 
-         http-server -p 8000
+      http-server -p 8000
       
 3. Open the index.html file in your browser in your open port address
 
-        http://127.0.0.1:8000
+      http://127.0.0.1:8000
 
 **(Ensure your browser supports the Web Audio API and, for full functionality, the Web MIDI API.)**
 
