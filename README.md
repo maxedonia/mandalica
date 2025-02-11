@@ -127,7 +127,7 @@ You can find a full video demonstration [here](https://youtu.be/O_Std7CS_SE?si=W
 ![vid demo image](https://github.com/user-attachments/assets/93c7c1fa-a30f-44ef-a3b6-24087248d96e)
 
 
-**Note:** *_This patch was originally mapped for functionality with the Teenage Engineering OP-XY, but remains simple enough to employ on a wide variety of MIDI controllers._*
+**Note:** *_This patch was originally mapped for functionality with the [Teenage Engineering OP-XY](https://teenage.engineering/guides/op-xy#index), but remains simple enough to employ on a wide variety of MIDI controllers._*
 
 **License**
 
