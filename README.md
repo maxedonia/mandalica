@@ -94,20 +94,20 @@ If you have Python installed, you can serve your project as follows:
 **For Python 3**:
 Navigate to Your Project Directory:
      
-        cd /path/to/your/project
+      cd /path/to/your/project
         
 Start the Server in Python 3:
 
-        python -m http.server 8000
+      python -m http.server 8000
 
 Start the Server in Python 2:
 
-        python -m SimpleHTTPServer 8000
+      python -m SimpleHTTPServer 8000
         
 **Access Port:**
 Open your web browser and go to:
 
-        http://127.0.0.1:8000
+      http://127.0.0.1:8000
 
         
 ## **Usage**
